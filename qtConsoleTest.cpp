@@ -4,7 +4,7 @@ qtConsoleTest::qtConsoleTest(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
-    ui.console->ensureCursorVisible();
+    qout = new std::ostream(ui.console);
     connect(ui.console, &QConsoleWidget::cmdInput, this, &qtConsoleTest::echo);
     connect(this, &qtConsoleTest::cmdProssed, ui.console, &QConsoleWidget::PrintTip);
 }

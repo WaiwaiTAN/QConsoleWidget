@@ -1,7 +1,7 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
-#include "ui_qtConsole.h"
+#include "ui_qtConsoleTest.h"
 
 class qtConsoleTest : public QMainWindow
 {
@@ -24,11 +24,6 @@ private slots:
         *qout << "hello from my own ostream object" << std::endl;
         ui.console->appendPlainText("\nhello appended");
 	}
-
-    void printAll()
-    {
-        ui.textEdit->setText(ui.console->tmpstr);
-    }
 
     void echo(QString cmd)
     {

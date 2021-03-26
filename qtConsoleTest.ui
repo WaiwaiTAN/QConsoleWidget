@@ -7,29 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>524</width>
-    <height>400</height>
+    <height>401</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>qtConsole</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QTextEdit" name="textEdit">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>40</y>
-      <width>104</width>
-      <height>71</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QConsoleWidget" name="console">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>40</y>
-      <width>301</width>
+      <x>10</x>
+      <y>270</y>
+      <width>501</width>
       <height>71</height>
      </rect>
     </property>
