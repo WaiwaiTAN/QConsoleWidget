@@ -28,6 +28,6 @@ private slots:
     void echo(QString cmd)
     {
         *qout << cmd.toStdString();
-        emit cmdProssed();
+        ui.console->PrintTip();
     }
 };

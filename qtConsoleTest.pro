@@ -11,7 +11,7 @@ CONFIG += c++11
 SOURCES += \
     QConsoleWidget.cpp \
     main.cpp \
-    qtConsoleTest.cpp
+    qtConsoleTest.cpp \
 
 HEADERS += \
     QConsoleWidget.h \

@@ -29,10 +29,8 @@ void QConsoleWidget::PrintTip()
 
 QConsoleWidget::int_type QConsoleWidget::overflow(int_type v)
 {
-    if (v == '\n')
-    {
-        appendPlainText("");
-    }
+    moveCursor(QTextCursor::End);
+    insertPlainText (QString(QChar((char)v)));
     return v;
 }
 

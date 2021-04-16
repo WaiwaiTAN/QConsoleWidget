@@ -26,9 +26,9 @@ QConsoleWidget is a custom widgets for [Qt](https://www.qt.io/), which is a simu
     Don't forget to declare this is a costom widget by:
     ```xml
     <customwidget>
-    <class>QConsoleWidget</class>
-    <extends>QPlainTextEdit</extends>
-    <header>QConsoleWidget.h</header>
+        <class>QConsoleWidget</class>
+        <extends>QPlainTextEdit</extends>
+        <header>QConsoleWidget.h</header>
     </customwidget>
     ```
 2. To print messages in this widget, redirect the stream buffer of your own `std::ostream` object to this widget.

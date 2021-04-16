@@ -25,8 +25,9 @@ public slots:
     void PrintTip();
 
 protected:
-    virtual int_type __CLR_OR_THIS_CALL overflow(int_type v = std::char_traits<char>::eof());
+    // virtual int_type __CLR_OR_THIS_CALL overflow(int_type v = std::char_traits<char>::eof());
     virtual std::streamsize xsputn(const char *p, std::streamsize n);
+    virtual int_type overflow(int_type v = std::char_traits<char>::eof());
 
 signals:
     void cmdInput(QString cmd);
